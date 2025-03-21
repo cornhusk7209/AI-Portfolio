@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 model = tf.keras.applications.MobileNetV2(weights='imagenet')
 
 # Load and preprocess an image
-img_path = 'path_to_image.jpg'  # Provide the path to your image
+img_path = './images/imagesample.jpg'  # Provide the path to your image
 img = image.load_img(img_path, target_size=(224, 224))
 img_array = image.img_to_array(img)
 img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
